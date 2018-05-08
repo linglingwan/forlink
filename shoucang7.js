@@ -336,7 +336,6 @@ var readability = {
             {
                 curTitle = readability.getInnerText(hOnes[0]);
             }
-			alert(666);
         }
 
         curTitle = curTitle.replace( readability.regexps.trim, "" );
@@ -2027,6 +2026,9 @@ function GetSelectHtml() {
 	html=GetSelectHtml();
 	//title=document.title;
 	title=getArticleTitle();
+	if(window.location.host=='mp.weixin.qq.com'){
+		title=document.getElementById('activity-name').innerHTML;
+	}
 	
 	        window.onload = window.onunload = function() {};
 
