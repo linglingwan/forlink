@@ -336,6 +336,7 @@ var readability = {
             {
                 curTitle = readability.getInnerText(hOnes[0]);
             }
+			alert(666);
         }
 
         curTitle = curTitle.replace( readability.regexps.trim, "" );
@@ -347,7 +348,7 @@ var readability = {
         var articleTitle = document.createElement("H1");
         articleTitle.innerHTML = curTitle;
 
-        return curTitle;
+        return articleTitle;
     },
 
     /**
